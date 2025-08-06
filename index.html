@@ -20,7 +20,7 @@
         </div>
         <form class="border px-3">
             <div class="row">
-                <div class="col-12 my-3">
+                <div class="col-12 my-3 py-2">
                     <p class="alert alert-danger">Some fields are missing</p>
                 </div>
                 <div class="col-5">
@@ -51,6 +51,9 @@
                     <input type="text" class="form-control" id="second-name">
                 </div>
             </div>
+
+            <!-- location -->
+
             <div class="row pt-2">
                 <div class="col-6">
                     <label for="City" class="form-label">City</label>
@@ -70,40 +73,67 @@
                     <label for="postal" class="form-label">Postal</label>
                     <input type="text" class="form-control" id="postal">
                 </div>
+
+                <!-- end location -->
+
+                <!-- pay info -->
+
                 <div class="col-6">
                     <div class="my-2">We accept:</div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                        </label>
-                        <div class="visa">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="Visa">
-                            <label class="form-check-label" for="Visa">
-                                <i class="fa-brands fa-cc-visa"></i>
+                    <div class="form-check d-inline-flex gap-4 border rounded bg-secondary">
+                        <!-- Mastercard -->
+                        <div class="mastercard p-1">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="mastercard">
+                            <label class="form-check-label" for="mastercard">
+                                <i class="fa-brands fa-cc-mastercard"></i>
                             </label>
                         </div>
 
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-brands fa-cc-diners-club"></i>
-                        </label>
+                        <!-- Visa -->
+                        <div class="Visa p-1">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="visa">
+                            <label class="form-check-label" for="visa">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+                        </div>
+                        <!-- Diners Club -->
+                        <div class="diners p-1">
 
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                        <label class="form-check-label" for="radioDefault1">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="diners">
+                            <label class="form-check-label" for="diners">
+                                <i class="fa-brands fa-cc-diners-club"></i>
+                            </label>
+                        </div>
 
-                        </label>
+                        <!-- American Express -->
+                        <div class="amex p-1">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="amex">
+                            <label class="form-check-label" for="amex">
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
+                <!-- end pay info -->
+
+                <div class="col-6 pt-2">
+                    <label for="msg" class="form-label">Message</label>
+                    <textarea type="text-area" class="form-control" rows="4" id="msg"></textarea>
+                    <h7 class="text-dark fs-6" style="--bs-text-opacity: .5;">Add any notes here</h7>
+                </div>
+
+
+                <div class="col-12 pt-3">
+                    <div class="d-grid d-md-flex justify-content-md-end border-top bg-body-tertiary m-0 py-2 px-2">
+                        <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </div>
+                </div>
+
             </div>
-
+        </form>
     </div>
-    </div>
-    </form>
-    <form class="row p-4">
 
-        </div>
-    </form>
 
 
 
